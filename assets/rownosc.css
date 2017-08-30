@@ -1,0 +1,36 @@
+.r-archive-item {
+    width: 600px;
+    max-width: 100%;
+}
+.r-archive-item:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.r-archive-content {
+    width: 83%;
+    float: right;
+}
+.r-archive-item__cover {
+    width: 16%;
+    float: right;
+}
+.r-archive-item__cover img {
+    width: 100%;
+    height: auto;
+}
+
+.r-single-item:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.r-single-item__cover {
+    width: 200px;
+    float: right;
+}
+.r-single-item__cover img {
+    width: 100%;
+    height: auto;
+}
+
