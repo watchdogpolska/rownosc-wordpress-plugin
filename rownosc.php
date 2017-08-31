@@ -1,20 +1,21 @@
 <?php
 /**
- * Plugin Name: Rownosc.Info
- * Plugin URI:
- * Description: .
- * Version: 0.0.1
- * Author: Kamil Bregula
- * Author URI: https://siecobywatelska.pl/
- * GitHub Plugin URI: watchdogpolska/rownosc-wordpress-plugin
- * GitHub Plugin URI: https://github.com/watchdogpolska/rownosc-wordpress-plugin/
- * License: GPLv3 or Later
+ * Plugin Name:         Rownosc.Info
+ * Plugin URI:          https://github.com/watchdogpolska/rownosc-wordpress-plugin/
+ * Description:         .
+ * Version:             0.0.2
+ * Author:              Kamil Bregula
+ * Author URI:          https://siecobywatelska.pl/
+ * Domain Path:         /languages
+ * Text Domain:         rownosc
+ * GitHub Plugin URI:   https://github.com/watchdogpolska/rownosc-wordpress-plugin/
+ * License:             GPLv3 or Later
  *
  */
 
 use Rownosc\Rownosc;
 
-define( 'R_VERSION', '0.0.1');
+define( 'R_VERSION', '0.0.2');
 define( 'R_PLUGIN_FILE', __FILE__ );
 define( 'R_PLUGIN_PATH', dirname(__FILE__) . '/');
 define( 'R_PLUGIN_URL', plugins_url( '/', __FILE__ ) );
