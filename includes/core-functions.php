@@ -63,7 +63,7 @@ function r_get_template( $template_name, $args = array(), $template_path = '', $
 	$located = r_locate_template( $template_name, $template_path, $default_path );
 
 	if ( ! file_exists( $located ) ) {
-		_doing_it_wrong( __FUNCTION__, sprintf( __( '%s does not exist.', 'woocommerce' ), '<code>' . $located . '</code>' ), '2.1' );
+		_doing_it_wrong( __FUNCTION__, sprintf( __( '%s does not exist.', 'rownosc' ), '<code>' . $located . '</code>' ), '2.1' );
 		return;
 	}
 
@@ -159,4 +159,44 @@ function r_get_search_query( $escaped = true ) {
 	if ( $escaped )
 		$query = esc_attr( $query );
 	return trim($query);
+}
+
+
+/**
+ * Get available object type with full info
+ */
+function r_get_all_types() {
+	return apply_filters(
+		'rownosc_get_all_types',
+		array(
+			'publication'  => array(
+				'href'  => r_link_index('publication'),
+				'label' => __('Publication', 'rownosc')
+			),
+			'article'  => array(
+				'href'  => r_link_index('article'),
+				'label' => __('Acts / Documents', 'rownosc')
+			),
+			'document'  => [
+				'href'  => r_link_index('document'),
+				'label' => __('Document', 'rownosc')
+			],
+			'journal'  => array(
+				'href'  => r_link_index('journal'),
+				'label' => __('Journal', 'rownosc')
+			),
+			'multimedium'  => array(
+				'href'  => r_link_index('multimedium'),
+				'label' => __('Multimedium', 'rownosc')
+			),
+			'research'  => array(
+				'href'  => r_link_index('research'),
+				'label' => __('Research and statistics', 'rownosc')
+			)
+		)
+	);
+}
+
+function r_get_type($key) {
+	return r_get_all_types()[$key];
 }

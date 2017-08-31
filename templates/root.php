@@ -9,27 +9,14 @@ get_header('rownosc');
 do_action( 'rownosc_before_main_content' );
 ?>
 
-<h1><?= r_get_endpoint_title();?></h1>
+<h1><?php r_the_get_endpoint_title();?></h1>
 <?php r_get_search_form();?>
 <ul class="library-list">
+    <?php foreach(r_get_all_types() as $type):?>
     <li>
-        <a href="<?= esc_url(r_link_index('publication'));?>">Publikacje</a>
+        <a href="<?= esc_url($type['href']);?>"><?= $type['label'];?></a>
     </li>
-    <li>
-        <a href="<?= esc_url(r_link_index('article'));?>">Publikacje prasowe</a>
-    </li>
-    <li>
-        <a href="<?= esc_url(r_link_index('document'));?>">Akty prawne / dokumenty</a>
-    </li>
-    <li>
-        <a href="<?= esc_url(r_link_index('journal'));?>">Czasopisma</a>
-    </li>
-    <li>
-        <a href="<?= esc_url(r_link_index('multimedium'));?>">Media</a>
-    </li>
-    <li>
-        <a href="<?= esc_url(r_link_index('research'));?>">Badania i statystyki</a>
-    </li>
+    <?php endforeach;?>
 </ul>
 
 <?php

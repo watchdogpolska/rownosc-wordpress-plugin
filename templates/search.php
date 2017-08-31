@@ -17,26 +17,20 @@ do_action( 'rownosc_before_main_content' );
 foreach(r_get_response() as $entry) {
 	?>
     <div class="r-archive-item">
-		<?php if(isset($entry['object']['cover']) && $entry['object']['cover']):?>
+		<?php if(isset($entry['object']['cover.url']) && $entry['object']['cover.url']):?>
             <div class="r-archive-item__cover">
-                <img src="http://rownosc.info/media/<?= $entry['object']['cover'];?>" alt="<?= $entry['object']['title'];?>">
+                <img src="<?= $entry['object']['cover.url'];?>" alt="<?= $entry['object']['title'];?>">
             </div>
 		<?php endif;?>
         <div class="r-archive-item__content">
+            <?php var_dump($entry['object']); ?>
             <h2>
-                <?php
-                $fake = array(
-                    'id' => explode('/', $entry['api_detail'], -1)[7],
-                    'slug' => explode('/', $entry['object']['get_absolute_url'])[3],
-                    '_type' => $entry['model_name']
-                );
-                ?>
-                <a href="<?= r_get_link_show($fake);?>">
+                <a href="<?= r_get_link_show($entry['object']);?>">
 					<?= $entry['object']['title'];?>
                 </a>
             </h2>
 			<?php
-			echo r_get_the_description($entry['object']);
+			    echo r_get_the_description($entry['object']);
 			?>
         </div>
     </div>

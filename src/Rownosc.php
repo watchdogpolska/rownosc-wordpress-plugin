@@ -36,6 +36,7 @@ class Rownosc {
     }
 
     function init() {
+    	$this->load_textdomain();
         $install= new Install();
         $template_loader = new TemplateLoader();
         $frontent_script = new FrontentScripts();
@@ -51,6 +52,10 @@ class Rownosc {
             $option_page->init();
         }
     }
+
+	function load_textdomain() {
+		load_plugin_textdomain( 'rownosc', false, 'rownosc/languages/' );
+	}
 
     function constants() {
         define( 'R_CACHE_GROUP', 'rownosc' );

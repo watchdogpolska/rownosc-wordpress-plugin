@@ -1,0 +1,124 @@
+# Copyright (C) 2017 Rownosc.Info
+# This file is distributed under the same license as the Rownosc.Info package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Rownosc.Info 0.0.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/rownosc\n"
+"POT-Creation-Date: 2017-08-31 10:14:23+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2017-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: includes/core-functions.php:66
+msgid "%s does not exist."
+msgstr ""
+
+#: includes/core-functions.php:174
+msgid "Publication"
+msgstr ""
+
+#: includes/core-functions.php:178
+msgid "Acts / Documents"
+msgstr ""
+
+#: includes/core-functions.php:182
+msgid "Document"
+msgstr ""
+
+#: includes/core-functions.php:186
+msgid "Journal"
+msgstr ""
+
+#: includes/core-functions.php:190
+msgid "Multimedium"
+msgstr ""
+
+#: includes/core-functions.php:194
+msgid "Research and statistics"
+msgstr ""
+
+#: src/OptionPage.php:17
+msgid "Settings"
+msgstr ""
+
+#: src/OptionPage.php:18
+msgid "Support"
+msgstr ""
+
+#: src/OptionPage.php:28
+msgid "General"
+msgstr ""
+
+#: src/OptionPage.php:32
+msgid "Authorization"
+msgstr ""
+
+#: src/OptionPage.php:38
+msgid "Endpoint page"
+msgstr ""
+
+#: src/OptionPage.php:50
+msgid "Access Token"
+msgstr ""
+
+#: src/OptionPage.php:62
+msgid "Sites ID"
+msgstr ""
+
+#: src/OptionPage.php:92
+msgid "&mdash; Select &mdash;"
+msgstr ""
+
+#: src/OptionPage.php:104
+msgid "Równość.info Integration"
+msgstr ""
+
+#: src/OptionPage.php:105
+msgid "Równość.info"
+msgstr ""
+
+#: src/OptionPage.php:126
+msgid "Save Settings"
+msgstr ""
+
+#: src/Rewrite.php:60
+msgid "Bibliography"
+msgstr ""
+
+#: templates/searchform.php:17
+msgid "Search for:"
+msgstr ""
+
+#: templates/searchform.php:18
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr ""
+
+#: templates/searchform.php:20 templates/searchform.php:27
+msgctxt "submit button"
+msgid "Search"
+msgstr ""
+
+#: templates/searchform.php:25
+msgctxt "label"
+msgid "Search for:"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Rownosc.Info"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Kamil Bregula"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://siecobywatelska.pl/"
+msgstr ""

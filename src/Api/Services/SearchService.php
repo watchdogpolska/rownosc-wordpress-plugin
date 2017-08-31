@@ -21,7 +21,9 @@ class SearchService extends BaseApiService
 	    }
 
 	    $result = json_decode(wp_remote_retrieve_body($response), true);
-
+		array_walk($result['results'], function(&$item) {
+			return $item['object']['_type'] = $item['model_name'];
+		});
 	    return $result;
     }
 

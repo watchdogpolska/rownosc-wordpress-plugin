@@ -6,6 +6,8 @@
  * Version: 0.0.1
  * Author: Kamil Bregula
  * Author URI: https://siecobywatelska.pl/
+ * GitHub Plugin URI: watchdogpolska/rownosc-wordpress-plugin
+ * GitHub Plugin URI: https://github.com/watchdogpolska/rownosc-wordpress-plugin/
  * License: GPLv3 or Later
  *
  */

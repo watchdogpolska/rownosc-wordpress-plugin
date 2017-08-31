@@ -10,7 +10,6 @@ do_action( 'rownosc_before_main_content' );
 ?>
 <h1><?php r_the_get_endpoint_title(); ?></h1>
 
-
 <?php
 global $entry;
 

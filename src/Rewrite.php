@@ -45,18 +45,20 @@ class Rewrite {
 
     function get_endpoint_title()
     {
-        $type = get_query_var('r_object_type');
-        $id = get_query_var('r_object_id');
+    	if (r_is_action_page('archive')) {
+		    $type = get_query_var('r_object_type');
+		    return r_get_type($type)['label'];
+	    }
 
-        if ($type == '' && $id == '')
-        {
-            return __('Bibliography', 'rownosc');
-        }
+	    if (r_is_action_page('single')) {
+			$entry = r_get_response();
+			if (isset($entry['title']) && $entry['title']) {
+				return $entry['title'];
+			}
+	    }
 
-        if ($id == '')
-        {
-            return __($type, 'rownosc');
-        }
+	    return __('Bibliography', 'rownosc');
+
     }
 
     function is_supported_type($type)
@@ -72,7 +74,6 @@ class Rewrite {
 	    );
         return in_array($type, $supported_types);
     }
-
 
     public function get_prefix_permastruct()
     {
