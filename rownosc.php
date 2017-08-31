@@ -3,7 +3,7 @@
  * Plugin Name:         Rownosc.Info
  * Plugin URI:          https://github.com/watchdogpolska/rownosc-wordpress-plugin/
  * Description:         .
- * Version:             0.0.2
+ * Version:             0.0.3
  * Author:              Kamil Bregula
  * Author URI:          https://siecobywatelska.pl/
  * Domain Path:         /languages
@@ -15,7 +15,7 @@
 
 use Rownosc\Rownosc;
 
-define( 'R_VERSION', '0.0.2');
+define( 'R_VERSION', '0.0.3');
 define( 'R_PLUGIN_FILE', __FILE__ );
 define( 'R_PLUGIN_PATH', dirname(__FILE__) . '/');
 define( 'R_PLUGIN_URL', plugins_url( '/', __FILE__ ) );

@@ -46,8 +46,9 @@ class Rewrite {
     function get_endpoint_title()
     {
     	if (r_is_action_page('archive')) {
-		    $type = get_query_var('r_object_type');
-		    return r_get_type($type)['label'];
+		    $type_key = get_query_var('r_object_type');
+		    $type = r_get_type($type_key);
+		    return $type['label'];
 	    }
 
 	    if (r_is_action_page('single')) {

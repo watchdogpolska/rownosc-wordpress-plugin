@@ -177,10 +177,10 @@ function r_get_all_types() {
 				'href'  => r_link_index('article'),
 				'label' => __('Acts / Documents', 'rownosc')
 			),
-			'document'  => [
+			'document'  => array(
 				'href'  => r_link_index('document'),
 				'label' => __('Document', 'rownosc')
-			],
+			),
 			'journal'  => array(
 				'href'  => r_link_index('journal'),
 				'label' => __('Journal', 'rownosc')
@@ -198,5 +198,6 @@ function r_get_all_types() {
 }
 
 function r_get_type($key) {
-	return r_get_all_types()[$key];
+	$types = r_get_all_types();
+	return $types[$key];
 }
